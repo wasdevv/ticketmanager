@@ -16,15 +16,21 @@
 <br>
 <br>
 <br>
-<div class="card" style="width: 18rem;">
-  <% @tickets.each do |ticket| %>
-    <div class="card-header">
-      <p>Ticket <%= ticket.id %></p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <p class="list-group-item"><strong>Título: </strong><%= ticket.title %></p>
-      <p class="list-group-item"><strong>Descrição: </strong><%= ticket.description %></p>
-      <p class="list-group-item"><strong>Status Atualmente: </strong><%= ticket.status %></p>
-    </ul>
-  <% end %>
+<div class="container">
+  <div class="row">
+    <% @tickets.each do |ticket| %>
+      <div class="col-md-4 mb-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            <p>Ticket <%= ticket.id %></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <p class="list-group-item"><strong>Título: </strong><%= ticket.title %></p>
+            <p class="list-group-item"><strong>Descrição: </strong><%= ticket.description %></p>
+            <p class="list-group-item"><strong>Status Atualmente: </strong><%= ticket.status %></p>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

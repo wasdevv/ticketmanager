@@ -17,6 +17,8 @@ class TicketsController < ApplicationController
         @ticket = Ticket.new(status: "Open")
     end
 
+    def logs
+
     private
 
     def ticket_params

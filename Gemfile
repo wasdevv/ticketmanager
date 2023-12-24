@@ -64,3 +64,5 @@ end
 
 # banco de dados
 gem 'mongoid'
+
+gem "devise", "~> 4.9"
