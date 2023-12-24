@@ -1,0 +1,30 @@
+<div class="text-center">
+  <p>Bem vindo ao suporte <strong>24/7</strong>!</p>
+</div>
+<br>
+<br>
+<br>
+<div class="card custom-margin-left" style="width: 28rem;">
+  <div class="card-body">
+    <h5 class="card-title">Projeto de Tickets Suporte ONLINE 24/7!</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Ticket Manager usando MongoDB</h6>
+    <p class="card-text">Veja abaixo desse card como é feito os Tickets dos nossos usuários!</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="card" style="width: 18rem;">
+  <% @tickets.each do |ticket| %>
+    <div class="card-header">
+      <p>Ticket <%= ticket.id %></p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <p class="list-group-item"><strong>Título: </strong><%= ticket.title %></p>
+      <p class="list-group-item"><strong>Descrição: </strong><%= ticket.description %></p>
+      <p class="list-group-item"><strong>Status Atualmente: </strong><%= ticket.status %></p>
+    </ul>
+  <% end %>
+</div>

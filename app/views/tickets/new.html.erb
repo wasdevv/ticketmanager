@@ -1,0 +1,11 @@
+<%= form_for @ticket do |f| %>
+
+<%= f.label :Título %>
+<%= f.text_field :title, placeholder: "Digite o titulo do seu ticket!" %>
+<br>
+<%= f.label :Descrição %>
+<%= f.text_field :description, placeholder: "Digite a descrição" %>
+<br>
+<br>
+<%= f.submit 'Criar Ticket' %>
+<% end %>
